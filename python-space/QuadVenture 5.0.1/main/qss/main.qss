@@ -1,0 +1,74 @@
+/*QTabWidget::pane{
+      border:none;
+}*/
+/*QTabWidget::tab-bar{
+        alignment:left;
+}*/
+QTabBar {
+    background-color:#5B5B5B;
+}
+QTabBar#MS {
+    background-color:#FFFFFF;
+}
+
+QTabBar::tab{
+    width:100px;
+    height:30px;
+    margin-right:2px;
+    background-color:#8E8E8E;
+    color:white;
+	/*background:transparent;*/
+	/*color:white;*/
+	/*min-width:30ex;
+	min-height:10ex;*/
+}
+QTabBar::tab:hover{
+	background:rgb(255, 255, 255, 100);
+}
+QTabBar::tab:selected{
+	border-color: white;
+	background:white;
+	color:green;
+}
+
+QToolButton{
+    
+    background:transparent;
+    color:white;
+}
+/*
+QToolButton:checked{
+    background-color:blue;
+    
+}*/
+QWidget#content_mid_widget{
+	background:red;
+}
+
+QFrame#sampleHandler,#edit{
+    border:2px solid gray;
+}
+QDockWidget::title {
+	font: bold;
+ text-align: left; 
+ background: white; 
+ padding-left: 30px; 
+ }
+QDockWidget{
+    background:black;
+}
+
+QFrame#right_dock_content_frame{
+	background:white;
+	 border:1px solid gray;
+}
+QMainWindow{
+	background:#F0F8FF;
+}
+QMainWindow#status_frame{
+	background:red;
+}
+QWidget#first
+{
+border-right :2px solid gray;
+}
