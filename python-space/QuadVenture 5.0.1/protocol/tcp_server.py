@@ -40,7 +40,7 @@ class tcp_server(poc.QObject):
         return method()
 
     def tcp_link(self, client_socket, address):
-        receive_data_all = bytearray()
+        receive_data_all = bytes()
         # print('asdsa')
         while True:
             # while True:
@@ -50,7 +50,7 @@ class tcp_server(poc.QObject):
             if receive_data.hex().endswith('aa'):
                 print(receive_data_all.hex())
                 self.listen_signal.emit(receive_data_all)
-                receive_data_all.clear()
+                receive_data_all = bytes()
 
         # socket.close()
 
